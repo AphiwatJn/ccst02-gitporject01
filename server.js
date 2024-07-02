@@ -1,4 +1,5 @@
 const express = require('express')
+require('dotenv').config()
 const notFound = require('./middlewares/not-found')
 const app = express()
 
