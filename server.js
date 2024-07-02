@@ -11,4 +11,6 @@ app.use('/todo',todoRoute)
 app.use(notFound)
 app.use(errorMw)
 const port = process.env.PORT || 8888
-app.listen(port, ()=>console.log('Server running on',port))
+const ports = process.env.PORT || 7777
+console.log(ports)
+app.listen(port, ()=>console.log('Server running on',port)) // อันนี้คืออะไร
